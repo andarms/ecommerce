@@ -1,0 +1,31 @@
+<header>
+
+    <div class="flex">
+        <img src="/assets/hamaka.svg" alt="">
+        <a class="brand" href="#">Hamaka</a>
+    </div>
+
+    <div class="search-field">
+        <i class="material-symbols-outlined">search</i>
+        <input type="search" placeholder="Search product">
+    </div>
+    <button class="icon flat">
+        <i class="material-symbols-outlined">shopping_cart</i>
+        <span class="notification">3</span>
+    </button>
+    <button class="primary">Login</button>
+
+</header>
+<div class="banner">
+    <img src="https://preview.colorlib.com/theme/fashe/images/xmaster-slide-02.jpg.pagespeed.ic.A3H2aw755J.webp" alt="">
+</div>
+
+<div class="categories container">
+    <div class="card" *ngFor="let item of categories">
+        <img [src]="item.img" [alt]="item.name">
+        <button>
+            {{item.name}}
+        </button>
+    </div>
+
+</div>

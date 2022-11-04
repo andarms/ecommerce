@@ -1,0 +1,125 @@
+:host {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em 2em;
+
+    img {
+        height: 48px;
+        width: 48px;
+        vertical-align: middle;
+        margin-right: 1em;
+    }
+
+    a {
+        color: var(--primary);
+        font-weight: bold;
+        font-size: 2em;
+        vertical-align: middle;
+        text-decoration: none;
+        flex: 1;
+    }
+
+    .search-field {
+        position: relative;
+
+        i {
+            position: absolute;
+            top: 16px;
+            left: 12px;
+            color: #ccc;
+            font-size: 20px;
+        }
+
+        input {
+            border: 1px solid var(--boder-color);
+            padding: 1em 2em;
+            padding-left: 2.5em;
+            font-size: 1rem;
+            border-radius: 64px;
+            width: 400px;
+            margin-right: 1em;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+
+button {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 64px;
+    color: var(--btn-color);
+    padding: 1em 2.5em;
+    position: relative;
+
+    &.flat {
+        background-color: transparent;
+        border: none;
+    }
+
+    &.icon {
+        padding: 1em
+    }
+
+    &:hover {
+        background-color: var(--primary);
+        color: white;
+    }
+
+    &:active {
+        opacity: 0.8;
+    }
+
+    &.primary {
+        background-color: var(--primary);
+        --btn-color: #fff
+    }
+
+    .notification {
+        position: absolute;
+        top: 0px;
+        right: 4px;
+        background-color: var(--red);
+        color: white;
+        border-radius: 16px;
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+    }
+}
+
+
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3em auto;
+    gap: 1.6em;
+
+    .card {
+        max-width: 300px;
+        position: relative;
+
+        img {
+            width: 100%;
+
+        }
+
+        button {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 1em;
+        }
+    }
+}

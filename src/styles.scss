@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --boder-color: #333;
+    --primary: #183a81;
+    --btn-color: #333;
+    --red: #EB704D;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Quattrocento Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+select,
+textarea {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: inherit;
+    align-items: inherit;
+
+    .column {
+        flex-direction: column;
+    }
+}
+
+
+.flex {
+    flex: 1;
+}
